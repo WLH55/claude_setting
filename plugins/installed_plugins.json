@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "plugins": {
+    "frontend-design@claude-plugins-official": [
+      {
+        "scope": "user",
+        "installPath": "C:\\Users\\Lathan\\.claude\\plugins\\cache\\claude-plugins-official\\frontend-design\\unknown",
+        "version": "unknown",
+        "installedAt": "2026-01-05T01:30:46.080Z",
+        "lastUpdated": "2026-01-05T01:30:46.080Z",
+        "isLocal": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,102 @@
+# .coveragerc - Coverage configuration file
+# Place this in your project root
+
+[run]
+# Source code to measure coverage for
+source = .
+
+# Branch coverage measures both if and else branches
+branch = True
+
+# Parallel mode for combining coverage from multiple processes
+parallel = False
+
+# Paths to omit from coverage
+omit =
+    */tests/*
+    */test_*.py
+    */migrations/*
+    */settings/*
+    */wsgi.py
+    */asgi.py
+    manage.py
+    */venv/*
+    */env/*
+    */__pycache__/*
+    */site-packages/*
+    */dist/*
+    */build/*
+    *.egg-info/*
+    */conftest.py
+
+# Plugins
+plugins =
+    django_coverage_plugin
+
+[report]
+# Exclude lines from coverage
+exclude_lines =
+    # Default exclusions
+    pragma: no cover
+    def __repr__
+    raise AssertionError
+    raise NotImplementedError
+    if __name__ == .__main__.:
+    if TYPE_CHECKING:
+    if typing.TYPE_CHECKING:
+
+    # Protocol classes
+    class .*\bProtocol\):
+    @(abc\.)?abstractmethod
+
+    # Abstract properties
+    @abstractproperty
+
+    # Debug and development code
+    def __debug__
+    if settings.DEBUG:
+    if DEBUG:
+
+    # Exception handling that's hard to test
+    except ImportError:
+    except Exception:
+
+    # Type checking
+    : \.\.\.$
+
+# Show missing lines
+show_missing = True
+
+# Precision for coverage percentages
+precision = 2
+
+# Skip empty files
+skip_empty = True
+
+# Sort report by
+sort = Cover
+
+# Ignore errors
+ignore_errors = True
+
+[html]
+# Directory for HTML coverage report
+directory = htmlcov
+
+# Title for HTML report
+title = Coverage Report
+
+[xml]
+# Output file for XML coverage report
+output = coverage.xml
+
+[json]
+# Output file for JSON coverage report
+output = coverage.json
+
+[paths]
+# Map different source paths to the same location
+# Useful for combining coverage from different environments
+source =
+    myapp/
+    */myapp/

@@ -1,0 +1,12 @@
+{
+  "user-prompt-submit": {
+    "command": "powershell.exe",
+    "args": [
+      "-NoProfile",
+      "-ExecutionPolicy", "Bypass",
+      "-File", "C:\\Users\\Lathan\\.claude\\danger-check.ps1"
+    ],
+    "enabled": true,
+    "description": "检测并阻止危险系统操作（如删除系统文件、格式化磁盘等）"
+  }
+}

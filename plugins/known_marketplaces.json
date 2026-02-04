@@ -1,0 +1,18 @@
+{
+  "claude-plugins-official": {
+    "source": {
+      "source": "github",
+      "repo": "anthropics/claude-plugins-official"
+    },
+    "installLocation": "C:\\Users\\Lathan\\.claude\\plugins\\marketplaces\\claude-plugins-official",
+    "lastUpdated": "2025-12-29T11:50:28.756Z"
+  },
+  "claude-code-templates": {
+    "source": {
+      "source": "github",
+      "repo": "davila7/claude-code-templates"
+    },
+    "installLocation": "C:\\Users\\Lathan\\.claude\\plugins\\marketplaces\\claude-code-templates",
+    "lastUpdated": "2026-01-05T01:29:59.411Z"
+  }
+}
