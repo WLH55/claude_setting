@@ -12,10 +12,6 @@
     "API_TIMEOUT_MS": "3000000",
     "CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC": "1"
   },
-  "statusLine": {
-    "type": "command",
-    "command": "chcp 65001 > nul && echo 欢迎天才程序员光临"
-  },
   "permissions": {
     "allow": [
       "Bash(git status:*)",
@@ -39,7 +35,15 @@
       "Bash(git show:*)",
       "Bash(git blame:*)",
       "Bash(git clone:*)",
-      "Bash(git init:*)"
+      "Bash(git init:*)",
+      "Bash(openspec:*)",
+      "Bash(python:*)",
+	  "Bash(npm:*)"
+
     ]
+  },
+  "statusLine": {
+    "command": "input=$(cat); dir=$(basename \"$(echo \"$input\" | jq -r .cwd 2>/dev/null || pwd)\"); branch=$(git branch --show-current 2>/dev/null || echo 'no-git'); status=$(git status --porcelain 2>/dev/null | wc -l | tr -d ' '); blocks=$(echo \"$input\" | ccusage blocks 2>/dev/null); tokens=$(echo \"$blocks\" | grep 'REMAINING' | grep -o '[0-9][0-9,]*…' | sed 's/,//g' | sed 's/…//'); percent=$(echo \"$blocks\" | grep 'REMAINING' | grep -o '[0-9.]*%' | sed 's/%//'); time=$(echo \"$blocks\" | grep 'remaining)' | grep -o '[0-9]*h [0-9]*m remaining'); model=$(echo \"$input\" | jq -r '.model.display_name' 2>/dev/null); printf \"\\033[32m%s@%s\\033[0m:\\033[34m%s\\033[0m [%s]\" \"$(whoami)\" \"$(hostname -s)\" \"$dir\" \"$model\"; echo \" 🌿$branch 📝$status 🔢${tokens}k | ⏰$time (${percent}% remaining)\" 2>/dev/null || echo \"Failed to get status\"",
+    "type": "command"
   }
 }
