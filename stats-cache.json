@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "lastComputedDate": "2026-02-08",
+  "lastComputedDate": "2026-02-10",
   "dailyActivity": [
     {
       "date": "2025-12-29",
@@ -175,6 +175,18 @@
       "messageCount": 702,
       "sessionCount": 3,
       "toolCallCount": 223
+    },
+    {
+      "date": "2026-02-09",
+      "messageCount": 1651,
+      "sessionCount": 4,
+      "toolCallCount": 471
+    },
+    {
+      "date": "2026-02-10",
+      "messageCount": 924,
+      "sessionCount": 5,
+      "toolCallCount": 249
     }
   ],
   "dailyModelTokens": [
@@ -353,13 +365,25 @@
       "tokensByModel": {
         "MiniMax-M2.1": 541602
       }
+    },
+    {
+      "date": "2026-02-09",
+      "tokensByModel": {
+        "glm-4.7": 4549690
+      }
+    },
+    {
+      "date": "2026-02-10",
+      "tokensByModel": {
+        "glm-4.7": 2634978
+      }
     }
   ],
   "modelUsage": {
     "glm-4.7": {
-      "inputTokens": 39795220,
-      "outputTokens": 2247318,
-      "cacheReadInputTokens": 356011636,
+      "inputTokens": 46576109,
+      "outputTokens": 2651097,
+      "cacheReadInputTokens": 451659828,
       "cacheCreationInputTokens": 0,
       "webSearchRequests": 0,
       "costUSD": 0,
@@ -375,27 +399,27 @@
       "contextWindow": 0
     }
   },
-  "totalSessions": 113,
-  "totalMessages": 15484,
+  "totalSessions": 122,
+  "totalMessages": 18059,
   "longestSession": {
-    "sessionId": "0037faaf-c058-44fd-ba60-dd497e935543",
-    "duration": 86973498,
-    "messageCount": 646,
-    "timestamp": "2026-02-01T09:51:34.515Z"
+    "sessionId": "a8f7849c-237e-43fd-ace1-fbbf94084fcf",
+    "duration": 88183025,
+    "messageCount": 1184,
+    "timestamp": "2026-02-09T01:22:34.974Z"
   },
   "firstSessionDate": "2025-12-29T11:51:00.099Z",
   "hourCounts": {
-    "9": 20,
+    "9": 22,
     "10": 21,
     "11": 12,
     "12": 5,
     "13": 1,
-    "14": 9,
-    "15": 14,
-    "16": 8,
-    "17": 10,
+    "14": 11,
+    "15": 15,
+    "16": 10,
+    "17": 11,
     "18": 5,
-    "19": 7,
+    "19": 8,
     "20": 1
   }
 }

@@ -38,7 +38,24 @@
       "Bash(git init:*)",
       "Bash(openspec:*)",
       "Bash(python:*)",
-	  "Bash(npm:*)"
+	  "Bash(npm:*)",
+	  "Bash(Edit:*)",
+	  "Bash(dir:*)",
+	  "Bash(cd:*)",
+	  "Bash(node:*)",
+	  "Bash(mkdir:*)",
+	  "Bash(mv:*)",
+	  "Bash(echo:*)",
+	  "Bash(pip:*)",
+	  "Bash(curl:*)",
+	  "Bash(netstat:*)",
+	  "Bash(findstr:*)",
+	  "Bash(taskkill:*)"
+
+
+
+
+
 
     ]
   },

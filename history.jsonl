@@ -95,3 +95,4 @@
 {"display":"# ========== 启动命令 ==========\nCMD [\"uvicorn\", \"app.main:app\", \"--host\", \"0.0.0.0\", \"--port\", \"8000\"]\n因为人脸识别功能是cpu密集型的 [Pasted text #1 +43 lines]  是在服务启动的时候指定多个工作进程 还是在代码的地方开启多进程比较好","pastedContents":{},"timestamp":1770623286885,"project":"D:\\workspace\\coding\\workflows.pintrontech.com","sessionId":"c013750a-0c78-424c-9f4b-6fa02e5f4b98"}
 {"display":"/resume ","pastedContents":{},"timestamp":1770623295720,"project":"D:\\AI\\translate","sessionId":"00edddb5-96c3-476d-bb4c-51c6056fa224"}
 {"display":"继续","pastedContents":{},"timestamp":1770623329389,"project":"D:\\AI\\translate","sessionId":"a8f7849c-237e-43fd-ace1-fbbf94084fcf"}
+{"display":"/git-push ","pastedContents":{},"timestamp":1770786191216,"project":"C:\\Users\\Lathan\\.claude","sessionId":"77160a07-605e-4a74-921f-223c645b4dab"}
